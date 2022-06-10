@@ -69,7 +69,6 @@ namespace TrainClient
                     status = "ON TIME";
                 }
 
-                //var status = !service.LocationDetail.RealtimeDepartureActual ? $"EXP {service.LocationDetail.RealtimeDeparture}" : "ON TIME";
                 output.AppendLine($"{service.LocationDetail.GbttBookedDeparture} {service.LocationDetail.Destination.First().Description}");
                 output.AppendLine($"{service.RunningIdentity} {service.AtocName}");
                 output.AppendLine($"Plat {platform.PadRight(3)}{status.PadLeft(24)}");
